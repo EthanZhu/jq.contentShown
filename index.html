@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <title>jquery contentShown by EthanZhu</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>jquery contentShown</h1>
+        <h2>jquery plugin contentShown</h2>
+        <section id="downloads">
+          <a href="https://github.com/EthanZhu/jq.contentShown/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/EthanZhu/jq.contentShown/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/EthanZhu/jq.contentShown" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+<div class="container">
+<section id="main_content">
+<p>/******************************************</p>
+<p><strong>Update to v2.0, renamed to jq.contentShown</strong></p>
+<p><strong>@license:         This contentShown jQuery plug-in is dual licensed under the MIT and GPL licenses.</strong></p>
+<ul>
+ <li>jq.contentShown.js</li>
+ <li>
+ <li>@author          Ethan.zhu（zhuyidong）</li>
+ <li>@version         Version 2.0</li>
+ <li>@copyright       Copyright (c) 2012 gomesoft.com</li>
+ <li></li>
+ <li>@docs            <a href="http://ethanzhu.github.com/jq.contentShown/">http://ethanzhu.github.com/jq.contentShown/</a></li>
+ <li>@demo            <a href="http://ethanzhu.github.com/jq.contentShown/img-demo.html" target="_blank">images demo</a> ; <a href="http://ethanzhu.github.com/jq.contentShown/cont-demo.html" target="_blank">content demo</a></li>
+ <li></li>
+ <li>@link            <a href="http://www.gomesoft.com" target="_blank">Home</a> ; <a href="http://www.cnblogs.com/zhuyidong/" target="_blank">Blog</a></li>
+ <li>@email			  <a href="mailto:pig.whose@gmail.com">pig.whose@gmail.com</a> ; <a href="mailto:12377166@qq.com">12377166@qq.com</a></li>
+ <li></li> 
+</ul>
+<p>******************************************/</p>
+<p><b>Examples:</b></p>
+<p>	<a href="http://ethanzhu.github.com/jq.contentShown/examples/img-demo.html" target="_blank">Images Demo</a></p>
+<p>	<a href="http://ethanzhu.github.com/jq.contentShown/examples/cont-demo.html" target="_blank">Content Demo</a></p>
+<p>What it can do?</p>
+<p>content shown hot news</p>
+<div style="padding:5px;"><img src="content/images/demo/8.jpg"></div>
+<p>content shown tab demo</p>
+<div style="padding:5px;"><img src="content/images/demo/9.jpg"></div>
+<p>some images shown style</p>
+<div style="padding:5px;"><img src="content/images/demo/1.jpg"></div>
+<div style="padding:5px;"><img src="content/images/demo/2.jpg"></div>
+<div style="padding:5px;"><img src="content/images/demo/3.jpg"></div>
+<div style="padding:5px;"><img src="content/images/demo/4.jpg"></div>
+<div style="padding:5px;"><img src="content/images/demo/5.jpg"></div>
+<div style="padding:5px;"><img src="content/images/demo/6.jpg"></div>
+<div style="padding:5px;"><img src="content/images/demo/7.jpg"></div>
+<p>
+How to use:<br>
+ $('elem').contentShown({'options'});<br>
+setter:<br>
+ $('elem').contentShown('option',{'options'});<br>
+ $('elem').contentShown('option','option','value');<br>
+getter:<br>
+ var option = $('elem').contentShown('option','option name');<br>
+build:<br>
+ $('elem').contentShown('build',{'options'});
+</p>
+
+<p>default options ：</p>
+
+<pre><code>
+ id : null,	// used to getter you needn't to set this.
+ navSpace : 47,	// navigation item space
+ pWidth : 0,	// payer main width
+ pHeight : 0,	// player main height
+ navNum : 4,	// the quantities of in navigation will be seen 
+ navPlace : null,	// where is the nav lr: left or right; other: bottom or top 
+ autoPlay : true,	// auto play: true or false.
+ autoTime : 4000,	// time interval of AutoPlay
+ events : 'mouseenter',	// nav item events
+ tbgAnimate : true,	// nav background animate
+ tbgSpeed : 'fast',	// nav background animate speed
+ addtional : false,	// if you want to show particular style, you can set this as true.
+ step : 1,		// The quantities of navigation each slide
+ navSpeed : 'fast',	// nav slide speed
+ opacity : 0.6,
+ data : null,		// main data
+ loop : true,		// nav loop
+ player : true,		// is show player
+ animate : 'fade',	// left,right,top,bottom,fade,none
+ showTips : true,	// show tips message
+ tipsAnimate : 'fade',	// fade,slide
+ selected : 1,		// current selected
+ callback : null,
+ preLoad : true,		// preload img
+ target : '_blank',	// global target
+ pSpeed : 500,		// player animate speed
+ pType : false,		// plyer type
+ nContent : 'image',	// type of nav: num,none,image,content
+ pContent : 'image',	// type of player : image, content
+ listPlace : null,	// when you want to set up navigation center, set this as center
+ tipsBtn : false,	// show button in tips
+ loadClass : 'cs-player-loading',	// preload class
+ missing : 'cs-load-missing',		// missing image class
+ playBtn : false,	// show button in player you can click to show next or prev one by one
+ playBtnShow : null  // player button show always or not.  option value: always and others
+</code></pre>
+      </section>
+    </div>
+    <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-31251094-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+  </body>
+</html>
