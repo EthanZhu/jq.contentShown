@@ -5,7 +5,6 @@
  * @version         Version 2.0
  * @copyright       Copyright (c) 2012 gomesoft.com
  * @license         This contentShown jQuery plug-in is dual licensed under the MIT and GPL licenses.
- * 
  * @docs            http://ethanzhu.github.com/jq.contentShown/
  * @demo            http://ethanzhu.github.com/jq.contentShown/img-demo.html;
  * 					http://ethanzhu.github.com/jq.contentShown/cont-demo.html
