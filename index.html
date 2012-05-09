@@ -8,14 +8,14 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
 
-    <title>Jq.contentshown by EthanZhu</title>
+    <title>Jq.contentShown.js by EthanZhu</title>
   </head>
 
   <body>
 
     <header>
       <div class="container">
-        <h1>Contentshown jQuery plugin</h1>
+        <h1>ContentShown jQuery plugin</h1>
         <h2>jq.contentShown</h2>
 
         <section id="downloads">
@@ -29,8 +29,8 @@
     <div class="container">
 <section id="main_content">
 <p>/******************************************</p>
-<p><strong>Update to v2.0, renamed to jq.contentShown</strong></p>
-<p><strong>@license:         This contentShown jQuery plug-in is dual licensed under the MIT and GPL licenses.</strong></p>
+<p>Update to v2.0, renamed to jq.contentShown</p>
+<p>@license:         This contentShown jQuery plug-in is dual licensed under the MIT and GPL licenses.</p>
 <ul>
  <li>jq.contentShown.js</li>
  <li>
@@ -52,12 +52,12 @@
 <pre>
 <p>SIZE: <br>Main:<br> Compressed and Gzipped 14.6KB, Development version 48KB<br><br>Extend:<br> Compressed and Gzipped 4.2KB, Development version 17KB</p>
 </pre>
-<p>What it can do?</p>
-<p>content shown hot news</p>
+<p><b>What it can do?</b></p>
+<p>Hot news</p>
 <div style="padding:5px;"><img src="content/images/demo/8.jpg"></div>
-<p>content shown tab demo</p>
+<p>Tab demo</p>
 <div style="padding:5px;"><img src="content/images/demo/9.jpg"></div>
-<p>some images shown style</p>
+<p>Images shown</p>
 <div style="padding:5px;"><img src="content/images/demo/1.jpg"></div>
 <div style="padding:5px;"><img src="content/images/demo/2.jpg"></div>
 <div style="padding:5px;"><img src="content/images/demo/3.jpg"></div>
@@ -66,55 +66,56 @@
 <div style="padding:5px;"><img src="content/images/demo/6.jpg"></div>
 <div style="padding:5px;"><img src="content/images/demo/7.jpg"></div>
 <p>
-How to use:<br>
- $('elem').contentShown({'options'});<br>
+<b>How to use:</b><br>
+ $('elem').contentShown({'options'});<br><br>
 setter:<br>
  $('elem').contentShown('option',{'options'});<br>
- $('elem').contentShown('option','option','value');<br>
+ $('elem').contentShown('option','option','value');<br><br>
 getter:<br>
- var option = $('elem').contentShown('option','option name');<br>
+ var option = $('elem').contentShown('option','option name');<br><br>
 build:<br>
- $('elem').contentShown('build',{'options'});
+ $('elem').contentShown({'options'});
+ $('elem').contentShown('build');
 </p>
 
-<p>default options ：</p>
+<p><b>default options:</b></p>
 
 <pre><code>
- id : null,	// used to getter you needn't to set this.
- navSpace : 47,	// navigation item space
- pWidth : 0,	// payer main width
- pHeight : 0,	// player main height
- navNum : 4,	// the quantities of in navigation will be seen 
- navPlace : null,	// where is the nav lr: left or right; other: bottom or top 
- autoPlay : true,	// auto play: true or false.
- autoTime : 4000,	// time interval of AutoPlay
- events : 'mouseenter',	// nav item events
- tbgAnimate : true,	// nav background animate
- tbgSpeed : 'fast',	// nav background animate speed
- addtional : false,	// if you want to show particular style, you can set this as true.
- step : 1,		// The quantities of navigation each slide
- navSpeed : 'fast',	// nav slide speed
+ id : null,		<span>// used to getter you needn't to set this.</span>
+ navSpace : 47,		<span>// navigation item space</span>
+ pWidth : 0,		<span>// payer main width</span>
+ pHeight : 0,		<span>// player main height</span>
+ navNum : 4,		<span>// the quantities of in navigation will be seen </span>
+ navPlace : null,	<span>// where is the nav lr: left or right; other: bottom or top</span> 
+ autoPlay : true,	<span>// auto play: true or false.</span>
+ autoTime : 4000,	<span>// time interval of AutoPlay</span>
+ events : 'mouseenter',	<span>// nav item events</span>
+ tbgAnimate : true,	<span>// nav background animate</span>
+ tbgSpeed : 'fast',	<span>// nav background animate speed</span>
+ addtional : false,	<span>// if you want to show particular style, you can set this as true.</span>
+ step : 1,		<span>// The quantities of navigation each slide</span>
+ navSpeed : 'fast',	<span>// nav slide speed</span>
  opacity : 0.6,
- data : null,		// main data
- loop : true,		// nav loop
- player : true,		// is show player
- animate : 'fade',	// left,right,top,bottom,fade,none
- showTips : true,	// show tips message
- tipsAnimate : 'fade',	// fade,slide
- selected : 1,		// current selected
+ data : null,		<span>// main data</span>
+ loop : true,		<span>// nav loop</span>
+ player : true,		<span>// is show player</span>
+ animate : 'fade',	<span>// options: left,right,top,bottom,fade,none</span>
+ showTips : true,	<span>// show tips message</span>
+ tipsAnimate : 'fade',	<span>// options: fade,slide</span>
+ selected : 1,		<span>// current selected</span>
  callback : null,
- preLoad : true,		// preload img
- target : '_blank',	// global target
- pSpeed : 500,		// player animate speed
- pType : false,		// plyer type
- nContent : 'image',	// type of nav: num,none,image,content
- pContent : 'image',	// type of player : image, content
- listPlace : null,	// when you want to set up navigation center, set this as center
- tipsBtn : false,	// show button in tips
- loadClass : 'cs-player-loading',	// preload class
- missing : 'cs-load-missing',		// missing image class
- playBtn : false,	// show button in player you can click to show next or prev one by one
- playBtnShow : null  // player button show always or not.  option value: always and others
+ preLoad : true,	<span>// preload img</span>
+ target : '_blank',	<span>// global target</span>
+ pSpeed : 500,		<span>// player animate speed</span>
+ pType : false,		<span>// show plyer type or not</span>
+ nContent : 'image',	<span>// type of nav: num,none,image,content</span>
+ pContent : 'image',	<span>// type of player : image, content</span>
+ listPlace : null,	<span>// when you want to set up navigation center, set this as "center"</span>
+ tipsBtn : false,	<span>// show buttons in tips</span>
+ loadClass : 'cs-player-loading',	<span>// preload style</span>
+ missing : 'cs-load-missing',		<span>// missing image style</span>
+ playBtn : false,	<span>// show buttons in player you can click it to prev or next one by one</span>
+ playBtnShow : null	<span>// player buttons shown always or not. option value: always and others</span>
 </code></pre>
       </section>
       <div>

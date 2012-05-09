@@ -67,7 +67,6 @@ $('#sohu').contentShown('option',{
 	'ptype':true,
 	'tipsBtn':true,
 	'playBtn':true,
-	// 'player':false,
 	'data':[
 		{
 			'b':{'t':'http://i3.itc.cn/20120401/2b49_193d087a_bace_43de_4e1f_35f5133dd283_1.jpg','g':'_self','a':'AA制生活'},

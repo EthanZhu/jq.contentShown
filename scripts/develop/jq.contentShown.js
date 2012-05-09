@@ -145,7 +145,7 @@
 				}
 				else{
 					instLength = instData.length;
-					for( var i=0; i<thisLength; i++ ){
+					for( var i=0; i<userLength; i++ ){
 						thisData = userData[i];
 						if( !$.isEmptyObject(thisData) ){
 							if( i<instLength ) inst.data[i] = thisData;
@@ -165,13 +165,13 @@
 			}
 		},
 		_initOption: function(inst){
-			var self = this, navNum = self._g(inst,'navNum'), total = inst.total, step = self._g(inst,'step'), func = self.func;
+			var self = this, navNum = self._g(inst,'navNum'), total = inst.total, step = self._g(inst,'step'), func = self.func, selected, selectData, player, btnClass, i;
 			inst.loaded = [];
 			inst.images = [];
 			step = step >= total? 1: (step >= navNum ? parseInt(navNum/2): self._g(inst,'step'));
 			navNum == total ? extendRemove(inst.settings,{'loop': false}) : func;
 			extendRemove(inst.settings,{'step': step});
-			var selected = self._g(inst, 'selected'), selectData, i;
+			selected = self._g(inst, 'selected');
 			selected>inst.total? ( inst.selected = 0, selected = 1 ) : inst.selected = selected-1;
 			if(inst.selected>0){
 				selectData = inst.data[selected];
@@ -179,7 +179,7 @@
 				inst.data[0]=selectData;
 				inst.selected = 0;
 			}
-			var player = self._g(inst,'player');
+			player = self._g(inst,'player');
 			inst.firstPlay = false;
 			inst.$playBtns = inst.$player = '';
 			if(player){
@@ -199,7 +199,7 @@
 			} 
 			
 			inst.$nav = $('<div class="'+self._g(inst,'_nav')+'" />');
-			var btnClass = self._g(inst,'_btn');
+			btnClass = self._g(inst,'_btn');
 			inst.$btnPrev = $('<div class="'+btnClass+'"><span class="'+self._g(inst,'_btnPrev')+'" />');
 			inst.$btnNext = $('<div class="'+btnClass+' '+self._g(inst,'_aside')+'"><span class="'+self._g(inst,'_btnNext')+'" />');
 			inst.$navList = $('<div class="'+self._g(inst,'_tlist')+'" />');
@@ -448,7 +448,7 @@
 			}).delegate('a','focus',function(){
 				if(this.blur) this.blur();
 			});
-	        inst.$elem = null;
+	      //  inst.$elem = null;
 		},
 		_navItem: function(inst){
 			var self = this, 
@@ -467,6 +467,7 @@
 		           	!addtional?self._selected(inst, $this):self._selected(inst, $items.eq(index));
 		           }
 			});
+			$list = null;
 		},
 		_navBtns: function(inst){
 			var self = this, btn;
@@ -584,27 +585,25 @@
 		},
 		_extendStyle: function(inst){return;},
 		_scrollByStep: function(inst, which, isClick){
-			var	self = this,
-				total = inst.total,
-				navNum = self._g(inst,'navNum'),
-				space = self._g(inst,'navSpace'),
-				step = self._g(inst,'step'),
-				speed = self._g(inst,'navSpeed'),
-				$list = inst.$navList,
-				place = self._g(inst,'navPlace'),
-				loop = self._g(inst,'loop'),
-				func = self.func,
-				tbgAnimate = self._g(inst,'tbgAnimate'),
-				tbgSpeed=self._g(inst,'tbgSpeed'),
-				stepPlace = space * step,
-				totalPlace = (total-navNum) * space,
-				//navPlace = navNum * space,
-				nowPlace, 
+			var	self = this;
+			var	total = inst.total;
+			var	navNum = self._g(inst,'navNum');
+			var	space = self._g(inst,'navSpace');
+			var	step = self._g(inst,'step');
+			var	speed = self._g(inst,'navSpeed');
+			var	$list = inst.$navList;
+			var	place = self._g(inst,'navPlace');
+			var	loop = self._g(inst,'loop');
+			var	func = self.func;
+			var	tbgAnimate = self._g(inst,'tbgAnimate');
+			var	tbgSpeed=self._g(inst,'tbgSpeed');
+			var	stepPlace = space * step;
+			var	totalPlace = (total-navNum) * space;
+			var	nowPlace, 
 				newPlace, 
 				tbgPlace, 
 				overPlace = 0, 
 				$scroll = inst.$scroll,
-				func = self.func,
 				position = place === 'lr' ? 'top' : 'left',
 				whichBtn = which === 'prev' ? 'next':'prev';
 			if(!loop){
@@ -747,7 +746,7 @@
 		},
 		_scrollNav: function(inst,distance,fun){
 			var $list = inst.$navList,
-	            speed= this._g(inst,'navSpeed');
+	            speed= this._g(inst,'navSpeed'),
 	           	place = this._g(inst,'navPlace'),
 	            func = fun || function() {};
 	            place=='lr'? $list.animate({top: distance},speed, func):$list.animate({left: distance},speed, func);
@@ -1072,7 +1071,7 @@
 		},
 		
 		_tipsAnimate: function(inst,info){
-			var $info = inst.$tipsInfo,$tipsBg = inst.$tipsBg, tipsAnimate =this._g(inst,'tipsAnimate');
+			var $info = inst.$tipsInfo, $tipsBg = inst.$tipsBg, tipsAnimate =this._g(inst,'tipsAnimate');
 			var $info_ = $info.find('div')//.not('.tips-corner');
 			switch (tipsAnimate){
 				case 'slide':{

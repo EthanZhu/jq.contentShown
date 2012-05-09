@@ -12,9 +12,9 @@
 .fl{ float:left; width:500px; height:400px; margin-right:20px;}
 img{ border:none; display:block;}
 .content-shown{position:relative; overflow:hidden; z-index: 1; display:block;}
-.cs-nav{position:absolute;display: block; z-index: 2000}
+.cs-nav{position:absolute;display: block; z-index: 2000;}
 .cs-nav-list{position:relative; float:left;overflow:hidden;}
-.cs-nav-items{display:block; z-index:2001;overflow: hidden}
+.cs-nav-items{display:block; overflow: hidden; z-index:2001;}
 .cs-nav-item{float:left;display:inline;text-align:center;overflow:hidden;z-index: 2002; cursor:pointer;}
 .cs-nav-item a{vertical-align: middle;display:block;overflow:hidden;}
 .cs-nav-btn{float: left;}
@@ -26,7 +26,7 @@ img{ border:none; display:block;}
 .cs-nav-active{cursor:pointer;}
 .cs-nav-scroll{position:absolute;z-index: 2003;cursor: pointer;}
 .cs-nav-scroll a{ display:block; text-decoration: none;}
-.cs-scroll-over a{border: none;padding: 2001px;}
+.cs-scroll-over a{border: none;}
 .cs-nav-over{}
 .cs-nav-over a{}
 .cs-player{position:absolute;display:block;overflow: hidden;}
@@ -70,9 +70,8 @@ img{ border:none; display:block;}
 #sohu .cs-player{top:0; right:0}
 #sohu .cs-nav{bottom:15px; left:53px; z-index: 9002;}
 #sohu .cs-nav-item{height:54px; width: 84px; margin-right:10px;}
-#sohu .cs-nav-item img{width:80px; height:45px;}
-#sohu .cs-nav-item a{margin-top:5px; padding:2px; background:#B1B2B4; width:80px;height:45px; }
-#sohu .cs-nav-scroll{width:84px;height: 54px; background:url(../images/sohu/pointer.gif) no-repeat;}
+#sohu .cs-nav-item a{margin-top:5px; background:#B1B2B4; border:#B1B2B4 2px solid; width:80px;height:45px;}
+#sohu .cs-nav-scroll{width:84px;height: 54px; border:0; background:url(../images/sohu/pointer.gif) no-repeat;}
 #sohu .cs-nav-scroll a{width:84px;height: 54px;}
 #sohu .cs-player-type{right: 0px; top: 0px; width:92px; height: 92px; background:url(../images/sohu/tv-p.png) no-repeat;
 /*_background:none;
