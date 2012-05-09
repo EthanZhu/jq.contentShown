@@ -16,6 +16,7 @@
  ******************************************/
 
 Introduction:
+English： please visit http://ethanzhu.github.com/jq.contentShown/
 
 jquery contentShown 的前身是 jquery imageShown,
 新版的content shown 插件很多方法都被重写或者被合并，以提供更高的性能，特别是在loop设置为true的状态下，性能提升较大。
