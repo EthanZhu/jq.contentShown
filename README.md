@@ -1,5 +1,5 @@
 /******************************************
- * gomesoft.com
+ * jq.contentShown.js
  *
  * @author          Ethan.zhu（zhuyidong）
  * @version         Version 2.0
@@ -14,6 +14,7 @@
  * 
  *
  ******************************************/
+
 Introduction:
 
 jquery contentShown 的前身是 jquery imageShown,
