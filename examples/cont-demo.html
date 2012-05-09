@@ -2,25 +2,11 @@
 <html>
 	<head>
 	<meta charset="utf-8" />
-	<title>Flash To Javascript</title>
+	<title>Content Demo</title>
 	<link rel="stylesheet" type="text/css" href="../content/css/reset.css" />
 	<link rel="stylesheet" type="text/css" href="../content/css/content-shown.css" />
 	</head>
 	<body>
-		<div>
-			<script type="text/javascript">
-			//<!--
-				google_ad_client = "ca-pub-0059348423290999";
-				/* jquery plugin */
-				google_ad_slot = "5991468734";
-				google_ad_width = 728;
-				google_ad_height = 90;
-				//-->
-				</script>
-				<script type="text/javascript"
-				src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-			</script>
-		</div>
 		<div class="demo">
 			<div class="intr">
 				news demo <a class="show-intro" target="_blank" href="intro/news.html">options</a>
@@ -57,7 +43,21 @@
 				tab demo <a class="show-intro" target="_blank" href="intro/tab.html">options</a>
 			</div>
 			<div id="tab" class="content-shown">
-				<u>
+				<ul>
+					<li class="cs-nav-item"><p class="this-content"><a href="http://www.gomesoft.com" target="_blank">gomesoft</a></p></li>
+					<li class="cs-nav-item"><p class="this-content"><a href="http://www.cnblogs.com/zhuyidong/" target="_blank">blog</a></p></li>
+					<li class="cs-nav-item"><p class="this-content"><a href="https://github.com/EthanZhu/jq.contentShown" target="_blank">follow me</a></p></li>
+					<li class="cs-nav-item"><p class="this-content"><a href="http://ethanzhu.github.com/jq.contentShown/" target="_blank">Home</a></p></li>
+					<li class="cs-nav-item"><p class="this-content"><a href="http://ethanzhu.github.com/jq.contentShown/examples/img-demo.html" target="_blank">Image Demo</a></p></li>
+				</ul>
+				<ul>
+					<li class="cs-player-item"><div class="this-content"><p>tab1</p></div></li>
+					<li class="cs-player-item"><div class="this-content"><p>tab2 content</p></div></li>
+					<li class="cs-player-item"><div class="this-content"><p>tab3</p></div></li>
+					<li class="cs-player-item"><div class="this-content"><p>tab4 content</p></div></li>
+					<li class="cs-player-item"><div class="this-content"><p>tab5 content</p></div></li>
+				</ul>
+				<!-- <u>
 					<li class="cs-nav-item"><p class="this-content"><a href="http://www.google.com">tab1</a></p></li>
 					<li class="cs-nav-item"><p class="this-content"><a href="http://www.google.com">tab2</a></p></li>
 					<li class="cs-nav-item"><p class="this-content"><a href="http://www.google.com">tab3</a></p></li>
@@ -70,7 +70,7 @@
 					<li class="cs-player-item"><div class="this-content"><p>navNum : 3, nContent:'content', pContent:'content', navSpace: 120, tbgAnimate: false, autoTime: 3000, pWidth:500, pHeight:333, showTips:false</p></div></li>
 					<li class="cs-player-item"><div class="this-content"><p>tab4 content</p></div></li>
 					<li class="cs-player-item"><div class="this-content"><p>tab5 content</p></div></li>
-				</u>
+				</u> -->
 			</div>
 		</div>
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
@@ -111,7 +111,7 @@ $('#tab').contentShown('option',{
 	'tbgAnimate': false,
 	'autoTime': 3000,
 	'pWidth':500,
-	'pHeight':333,
+	'pHeight':100,
 	'showTips':false
 });
 $('#tab').contentShown('build');
