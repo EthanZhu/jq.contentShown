@@ -18,7 +18,7 @@ Introduction:
 
 English： please visit http://ethanzhu.github.com/jq.contentShown/
 
-
+插件使用了较多的外部链接和图片，如果你认为放在这里不合适请来信告知，我将尽快删除或者更换。
 jquery contentShown 的前身是 jquery imageShown,
 新版的content shown 插件很多方法都被重写或者被合并，以提供更高的性能，特别是在loop设置为true的状态下，性能提升较大。
 同时提供多个接口供开发者外部使用,回调函数的执行逻辑更加合理，现在的回调函数执行时，
@@ -31,11 +31,7 @@ jquery contentShown 的前身是 jquery imageShown,
 
 主要参数介绍：
 插件提供了非常丰富的参数设置。
-			id : null,				// 用来在getter时获取ID值，无需设置
-			navSpace : 47,			// 导航区域每个独立导航之间的间隔。
-			pWidth : 0,				// 播放区域的大小，当你没有在样式表中设置时，这里必须提供
-			pHeight : 0,			// 否则在有些情况下插件会不正常显示。
-			
+		
 			/*
 			 * 参数为 数字，或者 css、pyramid。
 			 * 当参数为纯数字的时候是表示当前可见导航区域显示的内容。
@@ -46,6 +42,10 @@ jquery contentShown 的前身是 jquery imageShown,
 			 *
 			 */
 			navNum : 4, 
+			id : null,				// 用来在getter时获取ID值，无需设置
+			navSpace : 47,			// 导航区域每个独立导航之间的间隔。
+			pWidth : 0,				// 播放区域的大小，当你没有在样式表中设置时，这里必须提供
+			pHeight : 0,			// 否则在有些情况下插件会不正常显示。
 			navPlace : null,		// 导航位置，默认null表示显示在上或者下，左右请设置为 "lr" (left or right) 
 			autoPlay : true,		// 是否自动播放
 			autoTime : 4000,		// 自动佛放时间间隔
