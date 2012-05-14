@@ -70,7 +70,7 @@
 			loop : true,			// nav loop
 			player : true,			// is show player
 			animate : 'fade',		// left,right,top,bottom,fade,none
-			showTips : false,		// show tips message
+			showTips : true,		// show tips message
 			tipsAnimate : 'fade',	// fade,slide
 			selected : 1,			// current selected
 			callback : null,
