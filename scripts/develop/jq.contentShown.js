@@ -60,7 +60,7 @@
 			autoPlay : true,		// auto play: true or false.
 			autoTime : 4000,		// time interval of AutoPlay
 			events : 'mouseenter',	// nav item events
-			tbgAnimate : null,		// nav background animate
+			tbgAnimate : true,		// nav background animate
 			tbgSpeed : 'fast',		// nav background animate speed
 			addtional : false,		// if you want to show particular style, you can set this as true.
 			step : 1,				// The quantities of navigation each slide
