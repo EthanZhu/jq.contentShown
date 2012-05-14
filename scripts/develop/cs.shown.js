@@ -1273,3 +1273,4 @@
 	$.contentShown.version = "@VERSION";
 
 })(jQuery);
+window.zydContentShown = true;
