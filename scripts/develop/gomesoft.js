@@ -1,3 +1,4 @@
+window.jQuery || document.write("<script src='scripts/jquery/jquery-1.7.2.min.js' type='text/javascript>\x3C/script>");
 /******************************************
  * gomesoft.com
  *
@@ -1714,3 +1715,23 @@ $(function(){
 		}
 });
 window.zydContentShown = true;
+
+$(function(){
+	$("#nav > ul > li").currentMenu({text: "home", style: "curr"});
+	
+	$("#nav li").showMenu({
+		effect:"slide",
+		speed:250
+	});
+	
+	$('#banner-shown').contentShown({
+		'navNum':3,
+		'playBtn':true,
+		'pWidth':998,
+		'pHeight':280,
+		'nContent':'num'
+	});
+	$('<img src="http://ethanzhu.github.com/jq.contentShown/content/images/pyramid/blu-ray.jpg" />').load(function(){
+		$('#banner-shown').contentShown('build');
+	});
+})
