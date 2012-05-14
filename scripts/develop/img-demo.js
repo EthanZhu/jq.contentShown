@@ -814,6 +814,7 @@ $('#left').contentShown('option',{
 	'navNum':4,
 	'pWidth':590,
 	'pHeight':188,
+	'navSpace':47,
 	'navPlace':'lr',
 'data':[
 {
