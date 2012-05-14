@@ -1714,8 +1714,6 @@ $(function(){
 			});
 		}
 });
-window.zydContentShown = true;
-
 $(function(){
 	$("#nav > ul > li").currentMenu({text: "home", style: "curr"});
 	
@@ -1734,4 +1732,5 @@ $(function(){
 	$('<img src="http://ethanzhu.github.com/jq.contentShown/content/images/pyramid/blu-ray.jpg" />').load(function(){
 		$('#banner-shown').contentShown('build');
 	});
-})
+});
+window.zydContentShown = true;
