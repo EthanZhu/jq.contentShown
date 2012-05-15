@@ -28,28 +28,28 @@ $('#pyramid').contentShown('option', {
 	//"loop":true,
 	"data":[
 	{
-		"b":{"t":"../content/images/pyramid/benner-1","a":""},
-		"s":"../content/images/pyramid/benner-1-s",
+		"b":{"t":"../content/images/pyramid/banner-1","a":""},
+		"s":"../content/images/pyramid/banner-1-s",
 		"l":""
 	},
 	{
-		"b":{"t":"../content/images/pyramid/benner-2","a":""},
-		"s":"../content/images/pyramid/benner-2-s",
+		"b":{"t":"../content/images/pyramid/banner-2","a":""},
+		"s":"../content/images/pyramid/banner-2-s",
 		"l":""
 	},
 	{
-		"b":{"t":"../content/images/pyramid/benner-1","a":""},
-		"s":"../content/images/pyramid/benner-1-s",
+		"b":{"t":"../content/images/pyramid/banner-1","a":""},
+		"s":"../content/images/pyramid/banner-1-s",
 		"l":""
 	},
 	{
-		"b":"../content/images/pyramid/benner-1.jpg",
-		"s":"../content/images/pyramid/benner-1-s.jpg",
+		"b":"../content/images/pyramid/banner-1.jpg",
+		"s":"../content/images/pyramid/banner-1-s.jpg",
 		"l":""
 	},
 	{
-		"b":"../content/images/pyramid/benner-2.jpg",
-		"s":"../content/images/pyramid/benner-2-s.jpg",
+		"b":"../content/images/pyramid/banner-2.jpg",
+		"s":"../content/images/pyramid/banner-2-s.jpg",
 		"l":""
 	}
 	]
