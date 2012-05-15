@@ -28,18 +28,18 @@ $('#pyramid').contentShown('option', {
 	//"loop":true,
 	"data":[
 	{
-		"b":{"t":"../content/images/pyramid/banner-1","a":""},
-		"s":"../content/images/pyramid/banner-1-s",
+		"b":{"t":"../content/images/pyramid/banner-1.jpg","a":""},
+		"s":"../content/images/pyramid/banner-1-s.jpg",
 		"l":""
 	},
 	{
-		"b":{"t":"../content/images/pyramid/banner-2","a":""},
-		"s":"../content/images/pyramid/banner-2-s",
+		"b":{"t":"../content/images/pyramid/banner-2.jpg","a":""},
+		"s":"../content/images/pyramid/banner-2-s.jpg",
 		"l":""
 	},
 	{
-		"b":{"t":"../content/images/pyramid/banner-1","a":""},
-		"s":"../content/images/pyramid/banner-1-s",
+		"b":{"t":"../content/images/pyramid/banner-1.jpg","a":""},
+		"s":"../content/images/pyramid/banner-1-s.jpg",
 		"l":""
 	},
 	{
