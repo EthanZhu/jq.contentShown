@@ -28,19 +28,19 @@ $('#pyramid').contentShown('option', {
 	//"loop":true,
 	"data":[
 	{
-		"b":{"t":"../content/images/pyramid/blu-ray.jpg","a":"Blu-ray Ripper is an powerful Blu-ray tool to rip Blu-ray DVD"},
-		"s":"../content/images/pyramid/blu-ray-s.jpg",
-		"l":"http://www.gomesoft.com/blu-ray-ripper.html"
+		"b":{"t":"../content/images/pyramid/benner-1","a":""},
+		"s":"../content/images/pyramid/benner-1-s",
+		"l":""
 	},
 	{
-		"b":{"t":"../content/images/pyramid/total-media-onverter.jpg","a":"The best video converter software, DVD Ripper, DVD Burner, DRM Removal, Online Video Downloader/Recorder"},
-		"s":"../content/images/pyramid/total-media-onverter-s.jpg",
-		"l":"http://www.gomesoft.com/total-media-converter-ultimate.html"
+		"b":{"t":"../content/images/pyramid/benner-2","a":""},
+		"s":"../content/images/pyramid/benner-2-s",
+		"l":""
 	},
 	{
-		"b":{"t":"../content/images/pyramid/mac-video-converter.jpg","a":"Video Converter for Mac enables Mac users to easily convert videos, movies and TV shows from one to another format on Mac"},
-		"s":"../content/images/pyramid/mac-video-converter-s.jpg",
-		"l":"http://www.gomesoft.com/mac-video-converter.html"
+		"b":{"t":"../content/images/pyramid/benner-1","a":""},
+		"s":"../content/images/pyramid/benner-1-s",
+		"l":""
 	},
 	{
 		"b":"../content/images/pyramid/benner-1.jpg",
@@ -453,11 +453,11 @@ $('#lvyou').contentShown('option',{
 'data':[
 {
 	'b':'../content/images/MG_1221.jpg',
-	'l':'http://www.gomesoft.com',
-	't':'Cheap Video Converter, DVD Burner software provider.'
+	'l':'',
+	'm':'厦门鼓浪屿风景'
 },
 {
-	'b':'../content/images/IMG_1218-error.jpg',
+	'b':'../content/images/IMG_1218.jpg',
 	'l':'',
 	'm':'厦门鼓浪屿风景之二'
 },
@@ -819,9 +819,7 @@ $('#left').contentShown('option',{
 'data':[
 {
 	'b':'http://news.newone.com.cn/public/cms/public/upload/ad/2011-03-21/1300702369312.jpg',
-	's':'http://news.newone.com.cn/public/images/img/spic01.jpg',
-	'l':'http://www.gomesoft.com',
-	't':'Cheap Video Converter, DVD Burner software provider.'
+	's':'http://news.newone.com.cn/public/images/img/spic01.jpg'
 },
 {
 	'b':'http://news.newone.com.cn/public/images/img/lpic02.jpg',

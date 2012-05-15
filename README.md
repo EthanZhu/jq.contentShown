@@ -3,12 +3,11 @@
  *
  * @author          Ethan.zhu（zhuyidong）
  * @version         Version 2.0
- * @copyright       Copyright (c) 2012 gomesoft.com
+ * @copyright       Copyright (c) 2012 Ethan.Zhu
  * @license         This contentShown jQuery plug-in is dual licensed under the MIT and GPL licenses.
  * @docs            http://ethanzhu.github.com/jq.contentShown/
  * @demo            http://ethanzhu.github.com/jq.contentShown/img-demo.html;
  * 					http://ethanzhu.github.com/jq.contentShown/cont-demo.html
- * @link            http://www.gomesoft.com
  * @email			pig.whose@gmail.com; 12377166@qq.com
  * 
  *
